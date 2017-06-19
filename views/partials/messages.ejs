@@ -1,0 +1,7 @@
+<% Object.keys(messages).forEach(function(key) { %>
+    <% if(messages[key] && messages[key].length > 0) { %>
+        <div class="container">
+            <div class="alert alert-<%= key %>" role="alert"> <%= messages[key] %> </div> 
+        </div>
+    <% } %>
+<% }); %>

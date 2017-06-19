@@ -1,0 +1,19 @@
+.thumbnail {
+    padding: 0px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail .caption-full {
+    padding: 10px;
+}
+
+.comments {
+    padding: 25px;
+}
+
+.inline {
+    display: inline;
+}
