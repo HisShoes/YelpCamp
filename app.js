@@ -20,15 +20,16 @@ var commentRoutes       = require("./routes/comments"),
     campgroundsRoutes   = require("./routes/campgrounds"),
     indexRoutes         = require("./routes/index");
 
-//SeedDB();
-
 //app set up//
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
-mongoose.connect("mongodb://localhost/yelp_camp");
+//mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://yelpcampapp:yelpword@ds129532.mlab.com:29532/yelpcamp");
 app.use(express.static(__dirname + "/public"));
 app.use(methodOverride("_method"));
 app.use(flash());
+
+//SeedDB();
 
 //passport setup//
 app.use(require("express-session")({

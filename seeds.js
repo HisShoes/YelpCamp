@@ -38,7 +38,7 @@ function SeedDB() {
             console.log(err);
         } else {
             console.log("dropped campgrounds");
-           // AddData();
+           AddData();
         }
     });
 };
